@@ -1,0 +1,155 @@
+﻿
+node_modules\@angular\router\types\router.d.ts:8:export { ActivationEnd, 
+ActivationStart, BaseRouteReuseStrategy, CanLoad, CanLoadFn, 
+ChildActivationEnd, ChildActivationStart, Data, DefaultExport, 
+DeprecatedGuard, DeprecatedResolve, DetachedRouteHandle, EventType, 
+ExtraOptions, GuardResult, GuardsCheckEnd, GuardsCheckStart, 
+InitialNavigation, IsActiveMatchOptions, LoadChildren, LoadChildrenCallback, 
+MaybeAsync, Navigation, NavigationBehaviorOptions, NavigationCancel, 
+NavigationCancellationCode, NavigationEnd, NavigationExtras, 
+NavigationSkipped, NavigationSkippedCode, NavigationStart, 
+OnSameUrlNavigation, PRIMARY_OUTLET, ParamMap, PartialMatchRouteSnapshot, 
+QueryParamsHandling, ROUTER_CONFIGURATION, ROUTER_INITIALIZER, 
+ROUTER_OUTLET_DATA, RedirectFunction, ResolveData, ResolveEnd, ResolveStart, 
+RouteConfigLoadEnd, RouteConfigLoadStart, RouteReuseStrategy, RouterEvent, 
+RouterLink, RouterLinkActive, RouterLink as RouterLinkWithHref, RouterModule, 
+RouterOutlet, RouterState, RoutesRecognized, RunGuardsAndResolvers, Scroll, 
+UrlCreationOptions, UrlMatchResult, UrlMatcher, UrlSegment, UrlSegmentGroup, 
+UrlSerializer, convertToParamMap, defaultUrlMatcher, 
+destroyDetachedRouteHandle, isActive, ɵEmptyOutletComponent, ROUTER_PROVIDERS 
+as ɵROUTER_PROVIDERS, RestoredState as ɵRestoredState } from 
+'./_router_module-chunk.js';
+node_modules\@angular\router\types\router.d.ts:450: * elements _without_ 
+`RouterLink` directives to be intercepted by the Router and converted to SPA 
+navigations.
+node_modules\@angular\router\types\testing.d.ts:10:export { 
+ɵEmptyOutletComponent as ɵɵEmptyOutletComponent, RouterLink as ɵɵRouterLink, 
+RouterLinkActive as ɵɵRouterLinkActive, RouterOutlet as ɵɵRouterOutlet } from 
+'./_router_module-chunk.js';
+node_modules\@angular\router\types\_router_module-chunk.d.ts:820: * the same 
+`RouterLink` directive.
+node_modules\@angular\router\types\_router_module-chunk.d.ts:843: * @see 
+{@link RouterLink}
+node_modules\@angular\router\types\_router_module-chunk.d.ts:1951: * @see 
+{@link RouterLink}
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3406: * `<a 
+routerLink="/user/bob">link to user component</a>`
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3419: * link `<a 
+[routerLink]="['/user/jim']">Jim</a>` creates the URL
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3444: * <a 
+[routerLink]="['/user/bob']" [queryParams]="{debug: true}"
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3461: * <a 
+[routerLink]="['/user/bob']" [queryParams]="{debug: true}"
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3467: * 
+`relativeTo` cannot be used when the `routerLink` input is a `UrlTree`.
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3479: * <a 
+[routerLink]="['/user/bob']" [state]="{tracingId: 123}">
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3496: * ### 
+RouterLink compatible custom elements
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3498: * In order 
+to make a custom element work with routerLink, the corresponding
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3506:declare 
+class RouterLink implements OnChanges, OnDestroy {
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3584:     * for 
+`routerLink`, which is the current activated route.
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3585:     * Note 
+that a value of `undefined` here will use the `routerLink` default.
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3635:    private 
+routerLinkInput;
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3644:     *   - 
+**null|undefined**: effectively disables the `routerLink`
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3647:    set 
+routerLink(commandsOrUrlTree: readonly any[] | string | UrlTree | null | 
+undefined);
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3655:    static 
+ɵfac: i0.ɵɵFactoryDeclaration<RouterLink, [null, null, { attribute: 
+"tabindex"; }, null, null, null]>;
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3656:    static 
+ɵdir: i0.ɵɵDirectiveDeclaration<RouterLink, "[routerLink]", never, { "target": 
+{ "alias": "target"; "required": false; }; "queryParams": { "alias": 
+"queryParams"; "required": false; }; "fragment": { "alias": "fragment"; 
+"required": false; }; "queryParamsHandling": { "alias": "queryParamsHandling"; 
+"required": false; }; "state": { "alias": "state"; "required": false; }; 
+"info": { "alias": "info"; "required": false; }; "relativeTo": { "alias": 
+"relativeTo"; "required": false; }; "preserveFragment": { "alias": 
+"preserveFragment"; "required": false; }; "skipLocationChange": { "alias": 
+"skipLocationChange"; "required": false; }; "replaceUrl": { "alias": 
+"replaceUrl"; "required": false; }; "routerLink": { "alias": "routerLink"; 
+"required": false; }; }, {}, never, never, true, never>;
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3675: * <a 
+routerLink="/user/bob" routerLinkActive="active-link">Bob</a>
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3685: * <a 
+routerLink="/user/bob" routerLinkActive="class1 class2">Bob</a>
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3686: * <a 
+routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3692: * <a 
+routerLink="/user/bob" routerLinkActive="active-link" 
+[routerLinkActiveOptions]="{exact:
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3696: * To 
+directly check the `isActive` status of the link, assign the `RouterLinkActive`
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3701: * <a 
+routerLink="/user/bob" routerLinkActive #rla="routerLinkActive">
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3706: * You can 
+apply the `RouterLinkActive` directive to an ancestor of linked elements.
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3711: * <div 
+routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3712: *   <a 
+routerLink="/user/jim">Jim</a>
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3713: *   <a 
+routerLink="/user/bob">Bob</a>
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3717: * The 
+`RouterLinkActive` directive can also be used to set the aria-current attribute
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3724: * <a 
+routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home 
+Page</a>
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3727: * NOTE: 
+RouterLinkActive is a `ContentChildren` query.
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3732: * @see 
+[Detect active current route with RouterLinkActive](guide/routing/read-route-st
+ate#detect-active-current-route-with-routerlinkactive)
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3736:declare 
+class RouterLinkActive implements OnChanges, OnDestroy, AfterContentInit {
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3741:    links: 
+QueryList<RouterLink>;
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3754:    
+routerLinkActiveOptions: {
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3776:     *  
+routerLink="/user/bob"
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3777:     *  
+routerLinkActive="active-link"
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3778:     *  
+(isActiveChange)="this.onRouterLinkActive($event)">Bob</a>
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3787:    set 
+routerLinkActive(data: string[] | string);
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3795:    static 
+ɵfac: i0.ɵɵFactoryDeclaration<RouterLinkActive, never>;
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3796:    static 
+ɵdir: i0.ɵɵDirectiveDeclaration<RouterLinkActive, "[routerLinkActive]", 
+["routerLinkActive"], { "routerLinkActiveOptions": { "alias": 
+"routerLinkActiveOptions"; "required": false; }; "ariaCurrentWhenActive": { 
+"alias": "ariaCurrentWhenActive"; "required": false; }; "routerLinkActive": { 
+"alias": "routerLinkActive"; "required": false; }; }, { "isActiveChange": 
+"isActiveChange"; }, ["links"], never, true, never>;
+node_modules\@angular\router\types\_router_module-chunk.d.ts:3897:     * The 
+`createUrlTree` method is used internally by `Router.navigate` and 
+`RouterLink`.
+node_modules\@angular\router\types\_router_module-chunk.d.ts:4125:    static 
+ɵmod: i0.ɵɵNgModuleDeclaration<RouterModule, never, [typeof RouterOutlet, 
+typeof RouterLink, typeof RouterLinkActive, typeof ɵEmptyOutletComponent], 
+[typeof RouterOutlet, typeof RouterLink, typeof RouterLinkActive, typeof 
+ɵEmptyOutletComponent]>;
+node_modules\@angular\router\types\_router_module-chunk.d.ts:4136:export { 
+ActivatedRoute, ActivatedRouteSnapshot, ActivationEnd, ActivationStart, 
+BaseRouteReuseStrategy, ChildActivationEnd, ChildActivationStart, 
+DefaultUrlSerializer, EventType, GuardsCheckEnd, GuardsCheckStart, 
+NavigationCancel, NavigationCancellationCode, NavigationEnd, NavigationError, 
+NavigationSkipped, NavigationSkippedCode, NavigationStart, PRIMARY_OUTLET, 
+ROUTER_CONFIGURATION, ROUTER_INITIALIZER, ROUTER_OUTLET_DATA, 
+ROUTER_PROVIDERS, RedirectCommand, ResolveEnd, ResolveStart, 
+RouteConfigLoadEnd, RouteConfigLoadStart, RouteReuseStrategy, Router, 
+RouterEvent, RouterLink, RouterLinkActive, RouterModule, RouterOutlet, 
+RouterState, RouterStateSnapshot, RoutesRecognized, Scroll, UrlSegment, 
+UrlSegmentGroup, UrlSerializer, UrlTree, convertToParamMap, defaultUrlMatcher, 
+destroyDetachedRouteHandle, isActive, ɵEmptyOutletComponent };
+
+

@@ -1,97 +1,101 @@
-<section class="py-20 bg-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-8">
+<section class="py-16 sm:py-20 bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 sm:px-8">
 
-        <h2 class="text-center text-4xl font-bold text-[#FF69B4] mb-20">
+        <h2 class="text-center text-3xl sm:text-4xl font-bold text-[#FF69B4] mb-12 sm:mb-20">
             ABOUT THE APP
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
+        <!-- Passage en 2 colonnes repoussé à lg (1024px) au lieu de md (768px) -->
+        <!-- => les tablettes (768-1024px) restent empilées, avec assez d'espace pour la carte -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
 
-            <div class="relative h-auto sm:h-[420px] md:h-[520px] lg:h-[600px] flex items-center justify-center">
+            <div class="relative h-[280px] sm:h-[380px] md:h-[460px] lg:h-[480px] xl:h-[560px] flex items-center justify-center">
 
-                <div
-                    class="absolute -left-8 sm:-left-24 md:-left-44 top-0 w-40 sm:w-[420px] md:w-[700px] h-40 sm:h-[320px] md:h-[520px] bg-gradient-to-r from-purple-700 to-pink-500 rounded-[45%_55%_60%_40%/50%_35%_65%_50%]">
+                <!-- Blob : chaque breakpoint a SA taille propre, cohérente avec la largeur de colonne disponible -->
+                <div class="absolute -left-6 sm:-left-10 md:-left-16 lg:-left-14 xl:-left-24 top-1/2 -translate-y-1/2
+                            w-48 h-48 sm:w-64 sm:h-64 md:w-[320px] md:h-[260px] lg:w-[300px] lg:h-[260px] xl:w-[440px] xl:h-[360px]
+                            bg-gradient-to-r from-purple-700 to-pink-500
+                            rounded-[45%_55%_60%_40%/50%_35%_65%_50%]">
                 </div>
 
-                <div class="absolute top-6 left-8 w-12 h-12 rounded-full bg-white/10"></div>
-                <div class="absolute bottom-12 left-20 w-20 h-20 rounded-full bg-white/10"></div>
-                <div class="absolute top-40 left-4 w-16 h-16 rounded-full bg-white/10"></div>
+                <!-- Cercles décoratifs : affichés à partir de md (avant, sur mobile/petit sm, ça surchargeait visuellement) -->
+                <div class="hidden md:block absolute top-6 left-8 w-10 h-10 rounded-full bg-white/10"></div>
+                <div class="hidden md:block absolute bottom-12 left-16 w-16 h-16 rounded-full bg-white/10"></div>
+                <div class="hidden md:block absolute top-32 left-4 w-14 h-14 rounded-full bg-white/10"></div>
 
-                <div
-                    class="relative z-10 w-[220px] sm:w-[320px] md:w-[420px] h-auto sm:h-[560px] bg-white rounded-[50px] shadow-2xl border sm:rotate-[-35deg] rotate-0 overflow-hidden">
+                <!-- Carte téléphone : largeur + hauteur + rotation TOUJOURS définies ensemble à chaque breakpoint -->
+                <!-- Rotation retardée à md : sur mobile/petit sm, une carte droite est plus lisible et ne déborde pas -->
+                <div class="relative z-10 w-[180px] h-[320px] rotate-0
+                            sm:w-[220px] sm:h-[400px]
+                            md:w-[260px] md:h-[440px] md:rotate-[-15deg]
+                            lg:w-[240px] lg:h-[420px] lg:rotate-[-25deg]
+                            xl:w-[320px] xl:h-[520px] xl:rotate-[-35deg]
+                            bg-white rounded-[40px] sm:rounded-[50px] shadow-2xl border overflow-hidden
+                            transition-all duration-300">
 
-                    <img
-                        src="/image/deux.png"
-                        class="w-full h-full object-cover">
+                    <img src="/image/deux.png" alt="Aperçu de l'application"
+                         width="320" height="520"
+                         class="w-full h-full object-cover">
 
                 </div>
 
             </div>
 
             <div>
-
-                <h3 class="text-3xl font-bold text-gray-500 leading-tight">
+                <h3 class="text-2xl sm:text-3xl font-bold text-gray-500 leading-tight text-center lg:text-left">
                     Easy And Perfect Solution For Your Business App
                 </h3>
 
-                <p class="mt-8 text-gray-500 leading-8">
+                <p class="mt-6 sm:mt-8 text-gray-500 leading-7 sm:leading-8 text-center lg:text-left">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nulla placeat deserunt saepe repudiandae veniam soluta
                     minima dolor hic aperiam iure.
                 </p>
 
-                <p class="mt-8 text-gray-500 leading-8">
+                <p class="mt-6 sm:mt-8 text-gray-500 leading-7 sm:leading-8 text-center lg:text-left">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Laudantium quaerat dolorem ratione inventore porro
                     voluptates eos.
                 </p>
 
-                <div class="flex gap-6 mt-10">
-
-                    <button
-                        class="px-8 py-4 rounded-full bg-gradient-to-r from-purple-700 to-pink-500 text-white font-semibold shadow-lg">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8 sm:mt-10 items-center lg:items-start justify-center lg:justify-start">
+                    <button class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-purple-700 to-pink-500 text-white font-semibold shadow-lg whitespace-nowrap">
                         <i class="fa-brands fa-apple"></i> App Store
                     </button>
 
-                    <button
-                        class="px-8 py-4 rounded-full bg-gradient-to-r from-purple-700 to-pink-500 text-white font-semibold shadow-lg">
+                    <button class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-purple-700 to-pink-500 text-white font-semibold shadow-lg whitespace-nowrap">
                         <i class="fa-brands fa-google-play"></i> Google Play
                     </button>
-
                 </div>
-
             </div>
 
         </div>
-
     </div>
 </section>
-<section class="bg-gradient-to-r from-purple-700 to-pink-500 py-24">
+
+<section class="bg-gradient-to-r from-purple-700 to-pink-500 py-16 sm:py-24">
     <div class="max-w-4xl mx-auto px-6 text-center">
 
-        <h2 class="text-4xl font-bold text-white">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white">
             SUBSCRIBE FOR NEW FEATURES
         </h2>
 
-        <p class="mt-6 text-white/80 leading-8">
+        <p class="mt-6 text-white/80 leading-7 sm:leading-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Fuga esse culpa earum, velit numquam laboriosam maiores autem
             consequuntur repudiandae molestiae asperiores enim.
         </p>
 
-        <div class="mt-12 flex justify-center">
-            <div class="flex w-full max-w-xl bg-gradient-to-r from-purple-700 to-pink-500 border-2 border-white px-3 py-1 rounded-full overflow-hidden shadow-xl">
+        <div class="mt-10 sm:mt-12 flex justify-center">
+            <div class="flex flex-col sm:flex-row w-full max-w-xl bg-white/5 border-2 border-white
+                        px-3 py-3 sm:py-1 rounded-3xl sm:rounded-full overflow-hidden shadow-xl gap-2 sm:gap-0">
 
-                <input
-                    type="email"
-                    placeholder="Enter your email..."
-                    class="flex-1 px-8 py-4  text-white">
+                <input type="email" placeholder="Enter your email..."
+                       class="flex-1 min-w-0 px-4 sm:px-8 py-3 text-white placeholder-white/70 bg-transparent outline-none">
 
-                <button
-                    class="px-6 bg-white rounded-3xl hover:bg-[#FF69B4] transition text-gray-600 font-semibold">
+                <button class="px-6 py-3 bg-white rounded-full hover:bg-[#FF69B4] hover:text-white transition text-gray-600 font-semibold whitespace-nowrap">
                     Subscribe
                 </button>
-
             </div>
         </div>
 
